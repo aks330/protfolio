@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aks - Projects</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+  />
+</head>
+<body class="bg-gray-900 text-white">
+
+<!-- Header -->
+<header class="bg-gray-800 shadow-md sticky top-0 z-50">
+    <div class="container mx-auto flex justify-between items-center py-4 px-6">
+        <div class="text-3xl font-bold text-blue-600"><a href="index.html">Akshaya.</a></div>
+        <nav class="hidden md:flex space-x-6 text-md font-bold">
+            <a href="index.html" class="hover:text-blue-600 transition">Home</a>
+            <a href="about.html" class="hover:text-blue-600 transition">About</a>
+            <a href="projects.html" class="border-b-2 border-blue-600 hover:text-blue-600 transition">Projects</a>
+            <a href="contact.html" class="hover:text-blue-600 transition">Contact</a>
+        </nav>
+        <div class="md:hidden">
+            <button id="menuButton" class="text-3xl text-blue-600 focus:outline-none">&#9776;</button>
+        </div>
+    </div>
+</header>
+ <!-- Mobile Menu (for small screens) -->
+ <div id="mobileMenu" class="hidden bg-white shadow-md md:hidden">
+    <nav class="flex flex-col text-lg">
+        <a href="index.html" class="py-4 px-6 hover:bg-blue-100">Home</a>
+        <a href="about.html" class="py-4 px-6 hover:bg-blue-100">About</a>
+        <a href="projects.html" class="py-4 px-6 hover:bg-blue-100">Projects</a>
+        <a href="contact.html" class="py-4 px-6 hover:bg-blue-100">Contact</a>
+    </nav>
+</div>
+
+
+    <!-- Projects Section -->
+    <section class="py-16 mt-24">
+        <div class="container mx-auto">
+            <h2 class="text-4xl font-bold text-center mb-12">My Projects</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8" data-aos="fade-up"
+            data-aos-delay="200">
+                <!-- Project 1 -->
+                <div class="bg-gray-800 p-4 rounded-lg shadow-md">
+                                     <img src="images/project1.jpg" alt="Project 1" class="w-full h-48 object-cover rounded-lg mb-4">
+                    <h3 class="text-xl font-bold">Project Title 1</h3>
+                    <p class="mt-2">Brief description of what this project is about, technologies used, and your role.</p>
+                    <a href="https://project-link.com" target="_blank" class="mt-4 inline-block text-blue-400 hover:text-blue-600">View Project</a>
+                </div>
+                <!-- Project 2 -->
+                <div class="bg-gray-800 p-4 rounded-lg shadow-md">
+                    <img src="images/project2.jpg" alt="Project 2" class="w-full h-48 object-cover rounded-lg mb-4">
+                    <h3 class="text-xl font-bold">Project Title 2</h3>
+                    <p class="mt-2">Brief description of what this project is about, technologies used, and your role.</p>
+                    <a href="https://project-link.com" target="_blank" class="mt-4 inline-block text-blue-400 hover:text-blue-600">View Project</a>
+                </div>
+                <!-- Project 3 -->
+                <div class="bg-gray-800 p-4 rounded-lg shadow-md">
+                    <img src="images/project3.jpg" alt="Project 3" class="w-full h-48 object-cover rounded-lg mb-4">
+                    <h3 class="text-xl font-bold">Project Title 3</h3>
+                    <p class="mt-2">Brief description of what this project is about, technologies used, and your role.</p>
+                    <a href="https://project-link.com" target="_blank" class="mt-4 inline-block text-blue-400 hover:text-blue-600">View Project</a>
+                </div>
+                <!-- Add more projects as needed -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-6">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2024 Akshaya. All rights reserved.</p>
+        </div>
+    </footer>
+    <script>
+        // Mobile Menu Toggle
+        const menuButton = document.getElementById("menuButton");
+        const mobileMenu = document.getElementById("mobileMenu");
+        
+        menuButton.addEventListener("click", () => {
+            mobileMenu.classList.toggle("hidden");
+        });
+        window.addEventListener('load', function() {
+    AOS.init({
+        duration: 1000, 
+        once: true
+    });
+}); 
+    </script>
+    
+
+</body>
+</html>
+
